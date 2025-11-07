@@ -1,0 +1,393 @@
+body {
+
+
+    font-family: Arial, sans-serif;
+
+    /* Police principale du texte : Arial ou une police sans-serif */
+
+    color: #4b2b56;
+
+    /* Couleur du texte : gris foncé */
+
+
+    background: #ecd8f3;
+
+    /* Fond de la page : blanc */
+
+    margin: 0;
+
+
+    /* Supprime la marge par défaut autour de la page */
+
+
+    line-height: 1.5;
+
+    /* Hauteur de ligne pour améliorer la lisibilité */
+
+}
+
+/* --- Header --- */
+
+header {
+  display: flex;               /* disposition horizontale */
+  align-items: center;         /* aligne verticalement la photo et le texte */
+  justify-content: center;     /* centre le tout horizontalement */
+  gap: 10px;                   /* espace entre la photo et le titre */
+  background: #ecd8f3;
+  border-bottom: 2px solid #ddd;
+  padding: 10px 0;
+  position: relative;
+  text-align: center;
+
+}
+
+.photo {
+    width: 200px;   /* taille ajustable */
+    height: 200px;  /* même valeur pour cercle parfait */
+    border-radius: 50%;
+    object-fit: cover; /* pour garder le visage bien centré */
+    border: 4px solid #b22671; /* optionnel : un contour stylé */
+}
+
+header h1 {
+  font-size: 2rem;
+  margin: 1;
+  color: #4b2b56;
+}
+    
+/* --- Figure dans le header --- */
+
+header figure {
+
+    margin: 0 auto 20px;
+
+    /* Centre la figure horizontalement + marge basse de 10px */
+
+}
+
+
+header img {
+
+width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid #b22671;
+  object-fit: cover;
+ }
+
+
+header figcaption {
+
+
+    margin-top: 1px;
+
+
+    /* Espace entre l'image et la légende */
+
+
+    font-size: 1rem;
+
+
+    /* Taille normale du texte */
+
+
+}
+
+/* --- Navigation principale (header) --- */
+
+header nav ul {
+
+
+    display: flex;
+
+    /* Utilise Flexbox pour aligner les liens horizontalement */
+
+
+    justify-content: center;
+
+
+    /* Centre les éléments horizontalement */
+
+
+    gap: 17px;
+
+
+    /* Espace entre chaque élément de navigation */
+
+
+    list-style: none;
+
+
+    /* Supprime les puces de la liste */
+
+
+    padding: 0;
+
+
+    /* Supprime le padding par défaut */
+
+
+    margin: 10px 0 0;
+
+
+    /* Marge en haut de la liste, pas en bas */
+
+
+}
+
+header nav a {
+
+
+    text-decoration: none;
+
+    /* Supprime le soulignement des liens */
+
+
+    color: #842082;
+
+
+    /* Couleur bleue des liens */
+
+
+    font-weight: bold;
+
+
+    /* Texte en gras */
+
+
+    padding: 7px 20px;
+
+
+    /* Espace autour du texte pour créer un bouton */
+
+
+    border-radius: 6px;
+
+
+    /* Coins arrondis pour les liens */
+
+}
+header nav a:hover {
+
+    background-color: #57897c;
+
+    /* Fond gris clair au survol pour indiquer l’interaction */
+
+}
+
+/* --- Main --- */
+
+main>h1 {
+
+
+    text-align: center;
+
+
+    /* Centre le titre principal du main */
+
+
+    color: #27535e;
+
+
+    /* Couleur bleu foncé */
+
+
+    font-size: 4rem;
+
+
+    /* Taille du texte plus grande */
+
+
+    margin: 5px 0;
+
+    /* Espace vertical autour du titre */
+    }
+
+main>section {
+
+    max-width: 500px;
+
+    /* Largeur maximale du contenu */
+
+    margin: 0 auto 20px;
+
+    /* Centre horizontalement + marge en bas de 40px */
+
+    padding: 5 15px;
+
+    /* Espace intérieur gauche/droite de 15px */
+
+}
+main>section h2 {
+
+    color: #461641;
+
+    /* Couleur du titre */
+
+    font-size: 2em;
+
+    /* Taille du texte 5 fois la taille normale */
+}
+
+/* --- Footer --- */
+footer {
+
+
+    background: #542d3d;
+    /* Fond bleu foncé */
+    color: #fff;
+
+    /* Texte en blanc */
+
+    padding: 2px;
+
+    /* Espace intérieur autour du contenu */
+
+    text-align: right;
+
+    /* Centre le texte horizontalement */
+
+}
+
+footer p {
+    margin: 0;
+
+    /* Supprime la marge par défaut autour du paragraphe */
+
+}
+
+
+.bulle-zone {
+  display: flex;
+  justify-content: center;
+  gap: 35px;           /* espace entre les bulles */
+  margin-top: 0px;     /* ↓ diminue pour remonter les bulles */
+}
+
+.bulle {
+  width: 90px;         /* plus petite largeur */
+  height: 90px;        /* même hauteur */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1rem;     /* taille du texte adaptée */
+  color: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+/* couleurs */
+.bulle.accueil { background-color: #7c12b1; }
+.bulle.projets { background-color: #a961be; }
+.bulle.contact { background-color: #9030e4; }
+
+/* effet au survol (facultatif) */
+.bulle:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.3);
+}
+/* --- Icônes spécifiques (Emoji) --- */
+
+
+.icon-about::before {
+
+
+    content: "👩‍🎓";
+
+    /* Emoji représentant "À propos" */
+
+
+}
+
+
+.icon-capacité::before {
+
+
+    content: "✨";
+
+
+    /* Emoji représentant les compétences informatiques */
+
+
+}
+
+
+.icon-formations::before {
+
+
+    content: "📚";
+
+    /* Emoji représentant les formations/diplômes */
+
+}
+.icon-about {
+  display: inline-block;
+  border-bottom: 3px solid #c26c67;
+  padding-bottom: 5px;
+  color: #5f475c;
+}
+.icon-capacité { 
+display: inline-block;
+  border-bottom: 3px solid #c26c67;
+  padding-bottom: 5px;
+  color: #5f475c;
+}
+.icon-formations{
+  display: inline-block;
+  border-bottom: 3px solid #c26c67;
+  padding-bottom: 5px;
+  color: #5f475c;
+}
+.liste-capacités {
+  list-style: none;          /* enlève les puces par défaut */
+  padding-left: 0;
+}
+
+.liste-capacités li::before {
+  content: "✅";              /* ton icône personnalisée */
+  margin-right: 8px;         /* espace entre l’icône et le texte */
+  color: #68b295;            /* couleur de l’étoile */
+  font-size: 18px;
+}
+
+.liste-capacités li {
+  margin: 5px 0;             /* espace entre les lignes */
+  font-size: 16px;
+}
+.liste-formations {
+  list-style: none;          /* enlève les puces par défaut */
+  padding-left: 0;
+}
+
+.liste-formations li::before {
+  content: "✅";              /* ton icône personnalisée */
+  margin-right: 8px;         /* espace entre l’icône et le texte */
+  color: #68b295;            /* couleur de l’étoile */
+  font-size: 18px;
+}
+.liste-formations li {
+  margin: 5px 0;             /* espace entre les lignes */
+  font-size: 16px;
+}
+#about p {
+  position: relative;
+  line-height: 1.8;
+}
+
+#about p::before {
+  content: "🗨";
+  position: absolute;
+  left: -20px;
+  color: #62a9a2; /* couleur de l’étoile */
+}
+
+#about p {
+  white-space: pre-line; /* garde les sauts de ligne */
+}
+ 
+
+
+
+
