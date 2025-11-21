@@ -19,6 +19,7 @@ header h1 {
   margin: 0;
   font-size: 2.5rem;
   letter-spacing: 1px;
+  
 }
 
 nav ul {
@@ -86,8 +87,8 @@ nav a.active {
 
 .carte .info p {
   font-size: 0.95rem;
-  line-height: 1.4;
-  color: #555;
+  line-height: 2.6;
+  color: #090909;
 }
 
 /* Footer */
@@ -97,4 +98,17 @@ footer {
   text-align: center;
   padding: 15px 0;
   margin-top: 40px;
+}
+.carte .info h3 {
+  font-size: 1.3rem;
+  color: #842082;
+  margin: 0 0 10px;
+}.carte .info h4 {
+  font-size: 1.3rem;
+  color: #842082;
+  margin: 0 0 10px;
+}.carte .info h5 {
+  font-size: 1.3rem;
+  color: #842082;
+  margin: 0 0 10px;
 }
