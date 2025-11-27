@@ -1,114 +1,106 @@
 body {
   font-family: "Poppins", sans-serif;
   background-color: #f7f4fa;
-  color: #2c2c2c;
-  margin: 0;
-  padding: 0;
-}
-
-/* Header */
+ color: #2c2c2c;
+ margin: 0; 
+ padding: 0;
+} 
 header {
   background-color: #842082;
-  color: white;
+   color: white;
   text-align: center;
-  padding: 25px 0;
+ padding: 25px 0;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-
+} 
 header h1 {
   margin: 0;
-  font-size: 2.5rem;
+ font-size: 2.5rem;
   letter-spacing: 1px;
-  
 }
-
 nav ul {
-  list-style: none;
-  margin: 15px 0 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
+  list-style: none; 
+ margin: 15px 0 0;
+  padding: 0; 
+  display: flex; 
+  justify-content: center; 
   gap: 30px;
 }
-
-nav a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  padding: 8px 16px;
-  border-radius: 6px;
-  transition: background 0.3s ease;
-}
-
-nav a:hover,
-nav a.active {
-  background-color: #b266b2;
-}
-
-/* Section projets */
+ nav a {
+     text-decoration: none; 
+     color: white;
+      font-weight: bold;
+     padding: 8px 16px;
+     border-radius: 6px;
+      transition: background 0.3s ease;
+    } 
+nav a:hover, nav a.active {
+     background-color: #b266b2;
+    }
 .projets {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 25px;
-  padding: 40px;
-}
-
-/* Carte de projet */
-.carte {
-  background-color: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-  overflow: hidden;
-  width: 300px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.carte:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
-}
-
-.carte img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-}
-
-.carte .info {
-  padding: 15px;
-}
-
-.carte .info h2 {
-  font-size: 1.3rem;
-  color: #842082;
-  margin: 0 0 10px;
-}
-
-.carte .info p {
-  font-size: 0.95rem;
-  line-height: 2.6;
-  color: #090909;
-}
-
-/* Footer */
-footer {
-  background-color: #842082;
-  color: white;
-  text-align: center;
-  padding: 15px 0;
-  margin-top: 40px;
-}
-.carte .info h3 {
-  font-size: 1.3rem;
-  color: #842082;
-  margin: 0 0 10px;
-}.carte .info h4 {
-  font-size: 1.3rem;
-  color: #842082;
-  margin: 0 0 10px;
-}.carte .info h5 {
-  font-size: 1.3rem;
-  color: #842082;
-  margin: 0 0 10px;
-}
+     display: flex;
+     flex-wrap: wrap; 
+     justify-content: center;
+      gap: 25px;
+       padding: 40px;
+    }    
+ .grid-projets {
+     display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+     gap: 20px;
+      padding: 20px;
+     max-width: 1200px;
+      margin: 0 auto;
+    } 
+ .carte {
+      display: flex;
+     flex-direction: column;
+     align-items: center;
+      background-color: #f9e8f9;
+       border: 2px solid #b22671;
+        border-radius: 10px;
+        padding: 15px;
+      transition: all 0.3s ease;
+    } 
+ .carte:hover { 
+     transform: translateY(-5px);
+      box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+    }
+ .carte img { 
+     width: 150px;
+      height: 150px;
+     border-radius: 50%;
+     object-fit: cover;
+     border: 4px solid #b22671;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    } 
+.carte .info h2,h3,h4, h5 {
+     font-size: 1.3rem;
+      color: #842082;
+     margin: 0 0 10px;
+    }
+ .carte .info p {
+     font-size: 0.95rem;
+      line-height: 2.6;
+      color: #090909;
+    }  
+ .carte img:hover { 
+     transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3); 
+    } 
+ .carte .info {
+     padding: 15px;
+     text-align: center;
+      margin-top: 10px;
+    } 
+ .carte h2 { 
+     color: #461641;
+      margin-bottom: 5px; 
+    }
+    
+ footer {
+     background-color: #842082; 
+     color: white;
+      text-align: center;
+     padding: 15px 0;
+     margin-top: 40px;
+    } 

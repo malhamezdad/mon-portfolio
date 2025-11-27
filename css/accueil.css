@@ -1,0 +1,91 @@
+body.accueil-page {
+    background-color: #ecd8f3;
+}
+.bulle-zone {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  margin-top: 0px;
+}
+
+.bulle {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+.bulle.accueil { background-color: #7c12b1; }
+.bulle.projets { background-color: #a961be; }
+.bulle.contact { background-color: #9030e4; }
+
+.bulle:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.3);
+}
+
+.icon-about, .icon-capacité, .icon-formations {
+  display: inline-block;
+  border-bottom: 3px solid #c26c67;
+  padding-bottom: 5px;
+  color: #5f475c;
+}
+
+.icon-about::before { content: "👩‍🎓"; }
+.icon-capacité::before { content: "✨"; }
+.icon-formations::before { content: "📚"; }
+
+.liste-capacités,
+.liste-formations {
+  list-style: none;
+  padding-left: 0;
+}
+
+.liste-capacités li::before,
+.liste-formations li::before {
+  content: "✅";
+  margin-right: 8px;
+  color: #68b295;
+  font-size: 18px;
+}
+
+.liste-capacités li,
+.liste-formations li {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+#about p {
+  position: relative;
+  line-height: 1.8;
+  white-space: pre-line;
+}
+#about,#capacité,
+#formations {
+    border: 2px solid #b22671; 
+    border-radius: 10px;        
+    padding: 20px;              
+    margin: 20px auto;          
+    max-width: 600px;           
+    background-color: #f9e8f9;  
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+    transition: all 0.6s ease;
+}
+#about:hover, #capacité:hover, #formations:hover {
+    transform: translateY(-5px);      /* soulèvement léger */
+    background-color: #9f3a42;       /* fond un peu plus foncé */
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+#about p::before {
+  content: "🗨";
+  position: absolute;
+  left: -20px;
+  color: #62a9a2;
+}
