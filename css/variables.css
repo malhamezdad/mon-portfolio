@@ -1,0 +1,36 @@
+:root {
+  --color-primary: #842082;        
+  --color-primary-light: #b266b2;  
+  --color-accent: #7110ad;         
+  --color-effet: #ea829a;
+  /* ----- Couleurs secondaires ----- */
+  --color-bg: #ecd8f3;             
+  --color-bg-light: #f9e8f9;       
+  --color-bg-projets: #f7f4fa;     
+
+  /* ----- Texte ----- */
+  --color-text-main: #4b2b56;      
+  --color-text-dark: #2c2c2c;      
+  --color-text-light: #ffffff;     
+
+  /* ----- Effets ----- */
+  --shadow-primary: 0 4px 10px rgba(0,0,0,0.2);
+  --shadow-strong: 0 8px 15px rgba(0,0,0,0.2);
+
+  /* ----- Typographie ----- */
+  --font-main: "Poppins", Arial, sans-serif;
+
+  /* ----- Tailles ----- */
+  --radius-default: 10px;
+  --radius-round: 50%;
+
+ --color-facebook: #1877F2;
+ --color-instagram: #E4405F;
+ --color-link-hover: underline; 
+  --icon-size: 35px;
+
+/* Marges / spacing */
+
+  --gap-reseaux: 15px;
+  --margin-top-reseaux: 20px;
+}

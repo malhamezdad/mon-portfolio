@@ -9,33 +9,33 @@
     <link rel="stylesheet" href="css/accueil.css">
     <link href="https://fronts.googleapis.com/css2?familly=poppins:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/variables.css">
 </head>
 
 <body>
 
-<section class="image-zone">
-    <figure>
+<figcaption class="image-zone"aria-label="Photo de Malha Mezdad">
         <img src="images/image.png" alt="Ma Photo" class="photo">
-    </figure>
-    <h1>Malha Mezdad</h1>
-</section>
+      <h1>Malha Mezdad</h1>
+      
+</figcaption>
 
-<header>
-    <nav class="bulle-zone">
-        <a href="index.html" class="bulle accueil">Accueil</a>
+<header aria-label="En-tête du site">
+    <nav class="bulle-zone" aria-label="Navigation principale"> 
+        <a href="index.html" class="bulle accueil"aria-current="page">Accueil</a>
         <a href="projets.html" class="bulle projets">Projets</a>
-        <a href="mailto:mezdadmalha86@gmail.com" class="bulle contact">Contact</a>
+        <a href="contacts.html" class="bulle contact">Contact</a>
     </nav>
 </header>
 
-<main>
+<main aria-label="Contenu principal">
 
-<section id="about">  
+<section id="about"aria-labelledby="titre-about"> 
     <h2 class="icon-about">À propos</h2>
-    <p>Je suis étudiante en 1re année de licence en informatique à l'université du Littoral cote d'opale située à Calais. Je découvre petit à petit le monde passionnant du code et des technologies. J’aime apprendre, relever de nouveaux défis et construire des projets qui me permettent de progresser.</p>
+    <p>Je suis étudiante en 1 ére année licence en informatique à l'université du Littoral cote d'opale située à Calais. Je découvre petit à petit le monde passionnant du code et des technologies. J’aime apprendre, relever de nouveaux défis et construire des projets qui me permettent de progresser.</p>
 </section>
 
-<section id="capacité">
+<section id="capacité"aria-labelledby="titre-capacite">
     <h2 class="icon-capacité">Capacités</h2>
     <ul class="liste-capacités">
         <li>HTML</li>
@@ -46,17 +46,17 @@
     </ul>
 </section>
 
-<section id="formations">
+<section id="formations"aria-labelledby="titre-formations">
     <h2 class="icon-formations">Formations</h2>
     <ul class="liste-formations">
         <li>Baccalauréat sciences expérimentales — 2024</li>
         <li>Université ULCO — 2025</li>
     </ul>
 </section>
-
+        
 </main>
 
-<footer>
+<footer aria-label="Pied de page">
     <p>&copy; 2025 Mon Site</p>
 </footer>
 

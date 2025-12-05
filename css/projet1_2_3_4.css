@@ -1,14 +1,19 @@
+@import url("variables.css");
+@media (max-width: 768px) {
+  .contenu-projet {
+    flex-direction: column; 
+  }
+}
 body {
-  font-family: "Poppins", sans-serif;
-  background-color: #f7f4fa;
-  color: #2c2c2c;
-  margin: 2;
-  padding: 0;
+  font-family: var(--font-main);
+  background-color: var(--color-bg-projets);
+  color: var(--color-text-dark);
+  margin: 0;
 }
 
 header {
-  background-color: #842082;
-  color: white;
+  background: var(--color-primary);
+  color: var(--color-text-light);
   text-align: center;
   padding: 25px 0;
 }
@@ -22,14 +27,14 @@ nav ul {
 }
 
 nav a {
-  color: white;
+  color: var(--color-text-light);
   text-decoration: none;
   font-weight: bold;
 }
 
-.contenu-projet {
-  display: flex;
-  flex-wrap: wrap;
+.contenu-projet { 
+  display: flex;          
+  flex-wrap: wrap;        
   gap: 30px;
   padding: 40px;
   max-width: 1000px;
@@ -38,24 +43,25 @@ nav a {
 }
 
 .image-projet {
-  width: 100%;
+  flex: 1 1 400px;        
   max-width: 450px;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  border-radius: var(--radius-default);
+  box-shadow: var(--shadow-primary);
 }
-
 .details {
-  flex: 1;
-  min-width: 300px;
+  flex: 1 1 400px;        
 }
 
-.details h2,h3,h4,h5 {
-  color: #842082;
+.details h2,
+.details h3,
+.details h4,
+.details h5 {
+  color: var(--color-primary);
 }
 
 footer {
-  background-color: #842082;
-  color: white;
+  background: var(--color-primary);
+  color: var(--color-text-light);
   text-align: center;
   padding: 15px 0;
   margin-top: 40px;

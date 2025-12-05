@@ -10,51 +10,49 @@
 
 <header>
   <h1>HTML + CSS :</h1>
-  <nav>
+  <nav aria-label="Navigation principale">
     <ul>
       <li><a href="index.html">Accueil</a></li>
       <li><a href="projets.html">Projets</a></li>
+      <li><a href="contacts.html">contacts</a></li>
     </ul>
   </nav>
 </header>
 
-<main class="contenu-projet">
+<figure class="contenu-projet">
   <img src="images/html.png" alt="Image du Projet 4" class="image-projet">
 
-  <section class="details">
+  <figcaption class="details" aria-label="Détails du projet HTML et CSS">
+
     <h2>C'est quoi le HTML en informatique ?</h2>
     <p>
       HTML signifie « HyperText Markup Language »,
       qu'on peut traduire par « langage de balises pour l'hypertexte ».
     </p>
-  </section>
 
-  <section>
     <h3>Quelle est la signification de CSS ?</h3>
     <p>
       CSS, acronyme de Cascading Style Sheets
       (feuilles de style en cascade en français).
     </p>
-  </section>
 
-  <section>
     <h4>Petite définition du CSS :</h4>
     <p>
       CSS est un langage utilisé pour décrire la présentation d'un document HTML ou XML.  
       Il permet de séparer le contenu du document de sa mise en forme, 
       facilitant ainsi la gestion et la maintenance des sites web.
     </p>
-  </section>
 
-  <section>
     <h5>Quelle est la différence entre HTML et CSS ?</h5>
     <p>
       HTML (HyperText Markup Language) est un langage utilisé pour structurer le contenu d'une page web,  
       tandis que CSS (Cascading Style Sheets) sert à mettre en forme et à agencer visuellement ce contenu.  
       HTML fournit la structure, CSS fournit le design.
     </p>
-  </section>
-</main>
+
+  </figcaption>
+</figure>
+
 
 </body>
 </html>

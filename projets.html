@@ -5,11 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projets_ Malha Mezdad</title>
   <link rel="stylesheet" href="css/projets.css">
+  <link rel="stylesheet" href="css/variables.css">
 </head>
 <body>
   <header>
     <h1>Mes Projets</h1>
-    <nav>
+    <nav aria-label="Navigation principale">
       <ul>
         <li><a href="index.html">Accueil</a></li>
         <li><a href="projets.html" class="active">Projets</a></li>
@@ -18,54 +19,54 @@
     </nav>
   </header>
 
-  <main>
-    <section class="projets">
+  <main aria-label="Liste des projets">
+  <section class="projets">
 
-      <article class="carte">
-        <a href="projet1.html">
-          <img src="images/programmation.png" alt="Projet 1">
-        </a>
-        <section class="info">
-          <h2>Projet n°1:</h2>
-          <p>Qu'est-ce qu'une programmation ?🤔</p>
-        </section>
-      </article>
+    <figure class="carte">
+      <a href="projet1.html">
+        <img src="images/programmation.png" alt="Projet 1">
+      </a>
+      <figcaption class="info" aria-label="Projet 1">
+        <h2>Projet n°1 :</h2>
+        <p>Qu'est-ce qu'une programmation ? 🤔</p>
+      </figcaption>
+    </figure>
 
-      <article class="carte">
-        <a href="projet2.html">
-          <img src="images/python.png" alt="Projet 2">
-        </a>
-        <section class="info">
-          <h3>Projet n°2 :</h3>
-          <p>Découvrir le langage PYTHON 🧐</p>
-        </section>
-      </article>
+    <figure class="carte">
+      <a href="projet2.html">
+        <img src="images/python.png" alt="Projet 2">
+      </a>
+      <figcaption class="info" aria-label="Projet 2">
+        <h3>Projet n°2 :</h3>
+        <p>Découvrir le langage PYTHON 🧐</p>
+      </figcaption>
+    </figure>
 
-      <article class="carte">
-        <a href="projet3.html">
-          <img src="images/image C++.png" alt="Projet 3">
-        </a>
-        <section class="info">
-          <h4>Projet n°3:</h4>
-          <p>Apprendre plus sur le langage C++ 💻</p>
-        </section>
-      </article>
+    <figure class="carte">
+      <a href="projet3.html">
+        <img src="images/image C++.png" alt="Projet 3">
+      </a>
+      <figcaption class="info" aria-label="Projet 3">
+        <h4>Projet n°3 :</h4>
+        <p>Apprendre plus sur le langage C++ 💻</p>
+      </figcaption>
+    </figure>
 
-      <article class="carte">
-        <a href="projet4.html">
-          <img src="images/html.png" alt="Projet 4">
-        </a>
-        <section class="info">
-          <h5>Projet n°4 :</h5>
-          <p>HTML : Le langage qui donne vie aux pages web! 🔎</p>
-        </section>
-      </article>
+    <figure class="carte">
+      <a href="projet4.html">
+        <img src="images/html.png" alt="Projet 4">
+      </a>
+      <figcaption class="info" aria-label="Projet 4">
+        <h5>Projet n°4 :</h5>
+        <p>HTML : Le langage qui donne vie aux pages web ! 🔎</p>
+      </figcaption>
+    </figure>
 
-    </section>
-  </main>
+  </section>
+</main>
 
   <footer>
     <p>&copy; 2025 Malha Mezdad</p>
-  </footer>
+  </footer aria-label="Pied de page">
 </body>
 </html>
