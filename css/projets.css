@@ -109,3 +109,8 @@ footer {
     flex: 0 1 100%;
   }
 }
+@media (max-width: 768px) {
+  .contenu-projet {
+    flex-direction: column;
+  }
+}
