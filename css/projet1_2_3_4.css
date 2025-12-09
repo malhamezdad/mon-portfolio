@@ -1,9 +1,4 @@
 @import url("variables.css");
-@media (max-width: 768px) {
-  .contenu-projet {
-    flex-direction: column; 
-  }
-}
 body {
   font-family: var(--font-main);
   background-color: var(--color-bg-projets);
@@ -65,4 +60,9 @@ footer {
   text-align: center;
   padding: 15px 0;
   margin-top: 40px;
+}
+@media (max-width: 768px) {
+.contenu-projet {
+    flex-direction: column; 
+  }
 }
